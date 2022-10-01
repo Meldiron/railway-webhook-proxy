@@ -2,7 +2,11 @@
 
 Webhook proxy to trigger [Appwrite](https://appwrite.io/) Function. Hosted for free on [Railway](https://railway.app/)!
 
-This example is based on [HTTP Module Example](https://github.com/railwayapp-templates/http-nodejs).
+This allows you to host a simple webhook proxy for free that executes Appwrite function each time the proxy is hit.
+
+This is useful for integrations such as Stripe, Revolut Pay, Discord Interaction Bot, GitHub App, Shopify, Slack bot, and muuuuuch more.
+
+**Anything that has webhook integration can execute your Appwrite Function thanks to this proxy.**
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/-28yWv?referralCode=Y3OU6o)
 
