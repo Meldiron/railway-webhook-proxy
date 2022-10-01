@@ -16,7 +16,8 @@ This example is based on [HTTP Module Example](https://github.com/railwayapp-tem
 
 1. Click button 'Deploy on Railway' above
 2. Configure environment variables with details about your Appwrite instance
-3. Visit settings of 'webhook-proxy' service and use domain from there as webhook endpoint
+3. Visit settings of 'webhook-proxy' service and click 'Generate Domain'
+4. Use generated domain as endpoint for your webhook to trigger Appwrite Function
 
 ## 📝 Notes
 

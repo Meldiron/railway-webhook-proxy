@@ -1,10 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const bodyParser = require('body-parser');
-const dotenv = require('dotenv');
 const { healthz } = require('express-healthz');
-
-dotenv.config();
 
 const app = express();
 
@@ -66,4 +63,4 @@ app.use('/v1/execute', bodyParser.json(), async (req, res) => {
 
 app.use(express.static('site'));
 
-app.listen(80);
+app.listen(process.env.PORT);
