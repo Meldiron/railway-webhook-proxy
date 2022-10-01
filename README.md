@@ -14,12 +14,10 @@ This example is based on [HTTP Module Example](https://github.com/railwayapp-tem
 
 ## 💁‍♀️ How to use
 
-- Click button 'Deploy on Railway':
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/-28yWv?referralCode=Y3OU6o)
-
-- TODO
+1. Click button 'Deploy on Railway' above
+2. Configure environment variables with details about your Appwrite instance
+3. Visit settings of 'webhook-proxy' service and use domain from there as webhook endpoint
 
 ## 📝 Notes
 
-TODO
+None.
