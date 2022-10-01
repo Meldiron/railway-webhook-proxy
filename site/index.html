@@ -3,35 +3,106 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>NGINX on Railway</title>
-    <meta name="description" content="Choo Choo!" />
-
+    <title>Railway Webhook Proxy (Appwrite)</title>
+    <meta name="description" content="Webhook proxy to trigger Appwrite Function. Hosted for free on Railway!" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="/styles.css?v=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .custom-bg {
+        background-color: linear-gradient(180deg, #f02e65 0%, #c81b4c 100%);
+        background-image: url('/bg.png');
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
   </head>
 
   <body>
-    <main>
-      <img
-        src="https://railway.app/brand/logo-light.svg"
-        alt="Railway logo"
-        class="logo"
-      />
+    <div>
+      <!-- 'Made with Appwrite' badge -->
+      <a
+        href="https://appwrite.io/"
+        target="_blank"
+        style="position: fixed; right: 18px; bottom: 18px; z-index: 999"
+      >
+        <img
+          style="width: 130px"
+          src="https://appwrite.io/images-ee/press/badge-white-box.svg"
+          alt="Built with Appwrite"
+        />
+      </a>
+  
+      <div class="fixed inset-0 bg-primary custom-bg z-[5]"></div>
 
-      <h1>NGINX on Railway</h1>
+  
+      <div
+        class="relative z-10 flex flex-col min-h-screen px-3 mt-6 min-w-screen"
+      >
+        <div
+          class="
+            absolute
+            bottom-0
+            left-0
+            w-full
+            h-20
+            bg-gradient-to-t
+            from-black
+            to-primary
+            opacity-10
+          "
+        ></div>
+  
+        <img
+          class="absolute z-10 hidden left-10 bottom-10 sm:block"
+          src="/dots-bl.svg"
+          alt=""
+        />
+        <img
+          class="absolute z-10 hidden right-10 top-10 sm:block"
+          src="/dots-tr.svg"
+          alt=""
+        />
+  
+        <div
+          class="
+            flex flex-col
+            items-center
+            justify-center
+            h-full
+            pb-20
+            space-y-20
+          "
+        >
+          <div class="w-full max-w-2xl mt-6 space-y-6">
+            <Nuxt />
+          </div>
+        </div>
+      </div>
 
-      <p>
-        Choo Choo! This is an example of an NGINX static site running on
-        Railway.
-        <a
-          href="https://github.com/railwayapp/starters/tree/master/examples/nginx"
-          >View source</a
-        >.
-      </p>
-    </main>
 
-    <script src="/script.js"></script>
+      <div class="fixed inset-0 flex items-center justify-center z-[10]">
+        <div class="max-w-2xl mx-auto w-full text-center">
+          <h1 class="text-4xl font-bold text-white">Railway Webhook Proxy</h1>
+          <h3 class="mt-4 text-2xl font-medium text-white">
+            Webhook proxy to trigger Appwrite Function. Hosted for free on Railway!
+          </h3>
+
+          <p class="mt-10 text-white leading-loose">
+            To trigger, send request to <code class="bg-gray-900 text-white rounded-md py-1 px-2">/v1/execute</code>. To configure, set <code class="bg-gray-900 text-white rounded-md py-1 px-2">APPWRITE_ENDPOINT</code>, <code class="bg-gray-900 text-white rounded-md py-1 px-2">APPWRITE_API_KEY</code>, <code class="bg-gray-900 text-white rounded-md py-1 px-2">APPWRITE_PROJECT_ID</code>, and <code class="bg-gray-900 text-white rounded-md py-1 px-2">APPWRITE_FUNCTION_ID</code> variables on Railway.
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

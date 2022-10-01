@@ -1,27 +1,21 @@
-# NGINX Example
+# Railway Webhook Proxy (Appwrite)
 
-This example is deploys a site using [NGINX](https://www.nginx.com/)
+Webhook proxy to trigger [Appwrite](https://appwrite.io/) Function. Hosted for free on [Railway](https://railway.app/)!
+
+This example is based on [HTTP Module Example](https://github.com/railwayapp-templates/http-nodejs).
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/o3MbZe)
 
 
 ## ✨ Features
 
-- NGINX
-- Static Site
+- Proxy requests
+- Transform request into Appwrite REST API
 
 ## 💁‍♀️ How to use
 
-- Open the `site/index.html` in the browser
+- TODO
 
 ## 📝 Notes
 
-By default the `site/` directory gets deployed as a static site. This can be modified by changing the `Dockerfile`.
-
-The site is deployed using the default NGINX configuration. This can be overridden with a custom conf file by adding
-
-```
-COPY nginx.conf /etc/nginx/nginx.conf
-```
-
-to the end of the Dockerfile. For more information, [read the docs](https://hub.docker.com/_/nginx).
+TODO
