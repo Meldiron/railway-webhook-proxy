@@ -2,20 +2,23 @@ const express = require('express');
 const axios = require('axios');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
+const { healthz } = require('express-healthz');
 
 dotenv.config();
 
 const app = express();
 
-app.use('/v1/execute', bodyParser.json());
-app.use('/v1/execute', async (req, res) => {
+app.use(healthz);
+
+app.use('/v1/execute', bodyParser.json(), async (req, res) => {
     try {
         const data = {
             body: req.body,
             headers: req.headers,
             protocol: req.protocol,
             host: req.hostname,
-            pathname: req.originalUrl
+            pathname: req.originalUrl,
+            method: req.method
         };
 
         const url = `${process.env.APPWRITE_ENDPOINT}/functions/${process.env.APPWRITE_FUNCTION_ID}/executions`;

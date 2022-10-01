@@ -4,7 +4,7 @@ Webhook proxy to trigger [Appwrite](https://appwrite.io/) Function. Hosted for f
 
 This example is based on [HTTP Module Example](https://github.com/railwayapp-templates/http-nodejs).
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/o3MbZe)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/-28yWv?referralCode=Y3OU6o)
 
 
 ## ✨ Features
@@ -13,6 +13,10 @@ This example is based on [HTTP Module Example](https://github.com/railwayapp-tem
 - Transform request into Appwrite REST API
 
 ## 💁‍♀️ How to use
+
+- Click button 'Deploy on Railway':
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/-28yWv?referralCode=Y3OU6o)
 
 - TODO
 
