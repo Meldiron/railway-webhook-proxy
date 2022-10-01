@@ -21,4 +21,4 @@ This example is based on [HTTP Module Example](https://github.com/railwayapp-tem
 
 ## 📝 Notes
 
-None.
+- If you already have domain assigned on Railway under settings, please use that one. No need to re-generate. Also feel free to assign a custom domain if needed
