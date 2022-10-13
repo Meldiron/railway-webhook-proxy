@@ -26,3 +26,11 @@ This is useful for integrations such as Stripe, Revolut Pay, Discord Interaction
 ## 📝 Notes
 
 - If you already have domain assigned on Railway under settings, please use that one. No need to re-generate. Also feel free to assign a custom domain if needed
+
+## 🖼️ Screenshots
+
+![CleanShot 2022-10-13 at 11 07 15](https://user-images.githubusercontent.com/19310830/195554328-047615b9-52ed-4216-8f4e-24e104260773.png)
+
+![CleanShot 2022-10-13 at 11 07 42](https://user-images.githubusercontent.com/19310830/195554349-08d8f9df-93c3-434f-a231-2030af8118f8.png)
+
+![CleanShot 2022-10-13 at 11 08 38](https://user-images.githubusercontent.com/19310830/195554561-efc6334a-4366-44bc-b9d7-b57c99081b18.png)
