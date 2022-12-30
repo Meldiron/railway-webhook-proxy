@@ -41,7 +41,7 @@ app.use('/v1/execute', bodyParser.json(), async (req, res) => {
 
         res.json({
             data: response.data,
-            code: response.status,
+            code: response.data.statusCode,
         });
     } catch(err) {
         // Axios error
