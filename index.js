@@ -39,6 +39,7 @@ app.use('/v1/execute', bodyParser.json(), async (req, res) => {
             }
         );
 
+        res.status(response.data.statusCode);
         res.json({
             data: response.data,
             code: response.data.statusCode,
@@ -46,6 +47,7 @@ app.use('/v1/execute', bodyParser.json(), async (req, res) => {
     } catch(err) {
         // Axios error
         if (err.response) {
+            res.status(err.response.status);
             res.json({
                 data: err.response.data,
                 code: err.response.status,
@@ -54,6 +56,7 @@ app.use('/v1/execute', bodyParser.json(), async (req, res) => {
         }
 
         // Generic error
+        res.status(500);
         res.json({
             data: "Unexpected server error: " + (err.message ? err.message : err),
             code: 500,
